@@ -13,5 +13,12 @@ while (true){
     }
 }
 
-const fahrenheit = (celsius * 1.8.toFixed) + 32;
-const kelvin = celsius + 273.15.toFixed;
+const fahrenheit = (celsius * 1.8) + 32;
+const kelvin = celsius + 273.15;
+//DOM
+
+document.body.innerHTML = ` 
+<h1> Convertidor de Grados Celsius a Fahrenheit </h1>
+<p><strong>Celsius:</strong> ${celsius}°C</p>
+        <p><strong>Fahrenheit:</strong> ${fahrenheit.toFixed(2)}°F</p>
+        <p><strong>Kelvin:</strong> ${kelvin.toFixed(2)}K</p>`
